@@ -15,5 +15,6 @@ data_train_lodar=DataLoder(data_train,
                            batch_size=256,
                           shuffle=Ture, #随机打乱
                            num_workers=8)
-data_test_lodar=DataLoder(data_test,batch_size=1024
-                          ,num_workers=8)
+data_test_lodar=DataLoder(data_test,
+                          batch_size=1024,
+                          num_workers=8)
