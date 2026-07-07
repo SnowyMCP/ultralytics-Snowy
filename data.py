@@ -3,10 +3,10 @@ from torchvision.datasets import MNIST
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
-data_train=MIST('/data',  #数据地址
+data_train=torchvision.datasets.MNIST('/data',  #数据地址
                 download=True,
                 transform=tansforms.Compose([transform.Resize((32,32)),transforme.ToTensor()]))
-data_train=MIST('/data',  #数据地址
+data_train=torchvision.datasets.MNIST('/data',  #数据地址
                 train=False,
                 download=True,
                 transform=tansforms.Compose([transform.Resize((32,32)),transforme.ToTensor()]))
